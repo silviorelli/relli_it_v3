@@ -1,7 +1,11 @@
 {
   "name": "relli_it_v3",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Silvio Relli's homepage",
+  "main": "index.js",
+  "repository": "git@github.com:silviorelli/relli_it_v3.git",
+  "author": "Silvio Relli <silvio@relli.it>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
