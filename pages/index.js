@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SiteHead from '../components/site_head.js'
 import {createClient} from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
@@ -31,16 +31,13 @@ export async function getStaticProps() {
 
 export default function Home({ homeData }) {  
   return (
-    <div>
-      <Head>
-        <title>Silvio Relli</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <SiteHead name={homeData.name} profileImage={homeData.profileImage}/>
 
       <main className='m-8 text-center'>
         <p>Hi there!</p>
         <p>{homeData.name}</p>
       </main>
-    </div>
+    </>
   )
 }
