@@ -18,18 +18,6 @@ export default function SiteHead({name, profileImage}) {
       <meta property="og:description" content={`${name}'s homepage`} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:image" content={`https:${profileImage.fields.file.url}`} />
-
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=UA-37879690-1`}/>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-37879690-1');
-          `
-        }}
-      />
     </Head>
   )
 }
