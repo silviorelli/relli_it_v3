@@ -1,12 +1,12 @@
 import Head from 'next/head'
 
-export default function SiteHead({name, profileImage}) {
+export default function SiteHead({ name, profileImage }) {
   return (
     <Head>
-      <title>{name}'s homepage</title>
-      <meta name="description" content={`${name}'s homepage`}/>
-      <meta name="keywords" content={name}/>
-      <meta name="author" content={name}/>
+      <title>Silvio Relli's homepage</title>
+      <meta name="description" content={`${name}'s homepage`} />
+      <meta name="keywords" content={name} />
+      <meta name="author" content={name} />
       <meta name="twitter:card" content={name} />
       <meta name="twitter:title" content={name} />
       <meta name="twitter:description" content={`${name}'s homepage`} />
