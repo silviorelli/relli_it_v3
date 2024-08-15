@@ -1,12 +1,15 @@
-{ 
-  "env": {
-    "CONTENTFUL_SPACE_ID": "@contentful_space_id",
-    "CONTENTFUL_ACCESS_TOKEN": "@contentful_access_token"
-  },
-  "build": {
-    "env": {
-      "CONTENTFUL_SPACE_ID": "@contentful_space_id",
-      "CONTENTFUL_ACCESS_TOKEN": "@contentful_access_token"
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
