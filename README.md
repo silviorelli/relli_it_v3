@@ -1,35 +1,15 @@
-# Silvio Relli's homepage
+# Silvio Relli homepage v3.1
 
-Single page built using a fancy stack just for fun.
-
-[https://www.relli.it](https://www.relli.it)
-
-### Installation
-
+## Setup
 ```
-yarn
+asdf install
+yarn install
 ```
 
-### Development
+## Dev
+Build CSS with  `yarn run tailwindcss -i ./src/input.css -o ./style.css --watch`
 
-For local development, served with hot reload:
+## Run
+Run `python3 -m http.server`
 
-```
-yarn run dev
-```
-
-### Building
-
-Creating an optimized production build:
-
-```
-yarn run build
-```
-
-### Prod
-
-Serving the "static" production build:
-
-```
-yarn run start
-```
+Then open `http://localhost:8000/`
