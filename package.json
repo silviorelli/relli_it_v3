@@ -7,9 +7,9 @@
   "author": "Silvio Relli <silvio@relli.it>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.2",
