@@ -1,7 +1,12 @@
 # Silvio Relli homepage v3.1
 
 ## Setup
+Requires Node 26 (pinned in `.tool-versions` and in `engines` in `package.json`, which Vercel reads).
+
 ```
+brew install gnupg            # the asdf yarn plugin verifies downloads with gpg
+asdf plugin add nodejs
+asdf plugin add yarn
 asdf install
 yarn install
 ```
